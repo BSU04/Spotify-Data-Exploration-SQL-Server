@@ -1,4 +1,4 @@
-/***Data Exploration of the Spotify Dataset***/
+/***Spotify Data Exploration and Manipulation***/
 --Source: Kaggle
 
 -- display the table
@@ -83,7 +83,6 @@ from dbo.spot
 
 --retrieve the following characteristics of the songs
 --(danceability, energy, loudness, speechiness, acousticness, liveness, valence, tempo)
-
 select song,
 	   round(danceability,1) as Danceability,
 	   round(energy,1) as Energy,
