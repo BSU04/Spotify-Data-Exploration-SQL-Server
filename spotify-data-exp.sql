@@ -93,3 +93,5 @@ select song,
 	   round(valence,1) as Valence,
 	   round(tempo,1) as Tempo
 from dbo.spot
+
+--sort the artist by popularity
