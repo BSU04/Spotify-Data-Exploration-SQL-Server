@@ -133,3 +133,31 @@ song_key = 1
 select song from
 dbo.spot where
 song_key = 11
+
+
+--return the songs with a popularity greater than 80
+select song, popularity
+from dbo.spot 
+where popularity > 80
+order by popularity desc
+
+
+--return the songs with a popularity less than 50
+select song, popularity
+from dbo.spot 
+where popularity < 10
+order by popularity asc
+
+
+--songs of artists with high popularity
+select artist, song, popularity
+from dbo.spot 
+where popularity > 80
+order by popularity desc
+
+
+--songs of artists with least popularity
+select artist, song, popularity
+from dbo.spot 
+where popularity < 20
+order by popularity asc
