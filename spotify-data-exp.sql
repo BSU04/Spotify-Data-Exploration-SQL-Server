@@ -248,6 +248,34 @@ where
 artist like 'm%'
 
 
+--select the artists with the name ending with 'y'
+select distinct(artist)
+from dbo.spot
+where
+artist like '%y'
+
+
+--select the artists with the name having 'ny' in any position
+select distinct(artist)
+from dbo.spot
+where
+artist like '%ny%'
+
+
+--select the artists with the name having 'r' in second position
+select distinct(artist)
+from dbo.spot
+where
+artist like '_r%'
+
+
+--select the artists with the name starting with 'p' and ending with 'y'
+select distinct(artist)
+from dbo.spot
+where
+artist like 'p%y'
+
+
 --select the artists with the name starting with a number 2
 select distinct(artist)
 from dbo.spot
