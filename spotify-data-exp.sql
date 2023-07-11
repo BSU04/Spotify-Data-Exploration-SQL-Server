@@ -81,6 +81,7 @@ select round(danceability,1) as Danceability,
 	   round(tempo,1) as Tempo
 from dbo.spot
 
+
 --retrieve the following characteristics of the songs
 --(danceability, energy, loudness, speechiness, acousticness, liveness, valence, tempo)
 select song,
@@ -94,4 +95,17 @@ select song,
 	   round(tempo,1) as Tempo
 from dbo.spot
 
+
 --sort the artist by popularity
+select artist, popularity from dbo.spot
+order by popularity desc
+
+
+--sort the songs by popularity
+select song, popularity from dbo.spot
+order by popularity desc
+
+
+--list out the artists and songs with their corresponding popularity
+select artist, song, popularity from dbo.spot
+order by popularity desc
