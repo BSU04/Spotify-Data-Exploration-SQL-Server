@@ -206,3 +206,38 @@ and
 popularity < 20
 order by
 popularity asc
+
+
+--display the years present in the data
+select distinct(year) 
+from dbo.spot
+order by 
+year asc
+
+
+--return the songs released in the year 2018 to 2020 each with a seperate query
+select song from
+dbo.spot where
+year = 2018
+
+select song from
+dbo.spot where
+year = 2019
+
+select song from
+dbo.spot where
+year = 2020
+
+
+--display the entries of the artist "Neighbourhood" with their popularity and genre
+select artist, popularity, genre from
+dbo.spot where
+artist = 'The Neighbourhood'
+
+
+--return the distinct genres from the data
+select distinct(genre) 
+from dbo.spot
+
+
+
