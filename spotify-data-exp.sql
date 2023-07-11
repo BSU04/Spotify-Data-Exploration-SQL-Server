@@ -161,3 +161,48 @@ select artist, song, popularity
 from dbo.spot 
 where popularity < 20
 order by popularity asc
+
+
+--use select top statement to filter records
+select top 20 * from dbo.spot
+
+
+--mode(major-1, minor-0)
+--list out the top 20 songs in major mode with high popularity
+select artist, song, popularity
+from dbo.spot
+where mode = 1
+and
+popularity > 80
+order by 
+popularity desc
+
+
+--list out the top 20 songs in minor mode with high popularity
+select artist, song, popularity
+from dbo.spot
+where mode = 0
+and
+popularity > 80
+order by
+popularity desc
+
+
+--list out the top 20 songs in major mode with least popularity
+select artist, song, popularity
+from dbo.spot
+where mode = 1
+and
+popularity < 20
+order by 
+popularity asc
+
+
+--list out the top 20 songs in minor mode with least popularity
+select artist, song, popularity
+from dbo.spot
+where mode = 0
+and
+popularity < 20
+order by
+popularity asc
