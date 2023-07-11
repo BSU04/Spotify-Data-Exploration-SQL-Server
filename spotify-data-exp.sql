@@ -109,3 +109,27 @@ order by popularity desc
 --list out the artists and songs with their corresponding popularity
 select artist, song, popularity from dbo.spot
 order by popularity desc
+
+
+--retrieve the count of keys 
+select distinct(song_key)
+from dbo.spot
+order by song_key asc
+
+
+--rename the column 'key' to 'song_key'
+EXEC SP_RENAME 'spot.key','song_key','COLUMN'  
+--check whether the renaming is reflected
+select * from dbo.spot
+
+
+--return the songs that are in key 1
+select song from
+dbo.spot where
+song_key = 1
+
+
+--return the songs that are in key 11
+select song from
+dbo.spot where
+song_key = 11
