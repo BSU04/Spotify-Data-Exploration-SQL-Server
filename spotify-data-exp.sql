@@ -240,4 +240,37 @@ select distinct(genre)
 from dbo.spot
 
 
+--like operator
+--select the artists with the name starting with 'm'
+select distinct(artist)
+from dbo.spot
+where 
+artist like 'm%'
+
+
+--select the artists with the name starting with a number 2
+select distinct(artist)
+from dbo.spot
+where 
+artist like '2%'
+
+
+--return the artists starting with 'a' with a popularity greater than 85 and genre = 'pop'
+select distinct(artist) 
+from dbo.spot
+where
+artist like 'a%' and
+popularity > 70 and 
+genre = 'pop'
+
+
+--or operator
+--return the artists from either 'rock' or 'pop'
+select distinct(artist), genre
+from dbo.spot
+where
+genre = 'pop' or
+genre = 'rock'
+order by 
+genre asc
 
