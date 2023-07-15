@@ -362,3 +362,101 @@ genre = 'set()' --deleting rows having genre as set()
 
 select distinct(genre)
 from dbo.spot
+
+
+
+--UPDATE Genres
+update dbo.spot
+set genre = 'Country'
+where
+genre = 'country'
+
+update dbo.spot
+set genre = 'EDM'
+where
+genre = 'Dance/Electronic'
+
+update dbo.spot
+set genre = 'Folk/Acoustic'
+where
+genre = 'Folk/Acoustic, pop'
+
+update dbo.spot
+set genre = 'Folk/Acoustic'
+where
+genre = 'Folk/Acoustic, rock'
+
+update dbo.spot
+set genre = 'Folk/Acoustic'
+where
+genre = 'Folk/Acoustic, rock, pop'
+
+update dbo.spot
+set genre = 'Folk/Acoustic'
+where
+genre = 'Folk/Acoustic, rock, pop'
+
+update dbo.spot
+set genre = 'Hip Hop'
+where
+genre = 'hip hop, country'
+
+update dbo.spot
+set genre = 'Hip Hop'
+where
+genre = 'hip hop, Dance/Electronic'
+
+update dbo.spot
+set genre = 'Hip Hop'
+where
+genre = 'hip hop, latin, Dance/Electronic'
+
+update dbo.spot
+set genre = 'Hip Hop'
+where
+genre = 'hip hop, pop'
+
+update dbo.spot
+set genre = 'Hip Hop'
+where
+genre = 'hip hop, pop, country'
+
+update dbo.spot
+set genre = 'Hip Hop'
+where
+genre = 'hip hop, pop, Dance/Electronic'
+
+update dbo.spot
+set genre = 'Hip Hop'
+where
+genre = 'hip hop, pop, latin'
+
+update dbo.spot
+set genre = 'Hip Hop'
+where
+genre = 'hip hop, pop, R&B'
+
+update dbo.spot
+set genre = 'Hip Hop'
+where
+genre = 'hip hop, pop, R&B, Dance/Electronic'
+
+update dbo.spot
+set genre = 'Hip Hop'
+where
+genre = 'hip hop, pop, R&B, latin'
+
+update dbo.spot
+set genre = 'Hip Hop'
+where
+genre = 'hip hop, pop, rock'
+
+update dbo.spot
+set genre = 'Hip Hop'
+where
+genre = 'hip hop, R&B'
+
+update dbo.spot
+set genre = 'Hip Hop'
+where
+genre = 'hip hop, rock, pop'
