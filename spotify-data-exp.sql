@@ -366,16 +366,21 @@ from dbo.spot
 
 
 --UPDATE Genres
+--Country
 update dbo.spot
 set genre = 'Country'
 where
 genre = 'country'
 
+
+--EDM
 update dbo.spot
 set genre = 'EDM'
 where
 genre = 'Dance/Electronic'
 
+
+--Folk/Acoustic
 update dbo.spot
 set genre = 'Folk/Acoustic'
 where
@@ -396,6 +401,8 @@ set genre = 'Folk/Acoustic'
 where
 genre = 'Folk/Acoustic, rock, pop'
 
+
+--Hip Hop
 update dbo.spot
 set genre = 'Hip Hop'
 where
