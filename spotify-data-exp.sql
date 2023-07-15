@@ -320,3 +320,9 @@ select song
 from dbo.spot
 where 
 not explicit == 0 
+
+
+--top 10 artists with a popularity > 80
+select top 10 artist, popularity
+from dbo.spot
+where popularity > 80
