@@ -339,3 +339,15 @@ select * from
 dbo.spot
 where
 artist = 'NSYNC'
+
+
+
+--genre filters
+select distinct(genre)
+from dbo.spot
+
+select artist,song,genre
+from
+dbo.spot
+where genre = 'set()' --unknown genre in the dataset (mixed)
+
