@@ -351,3 +351,14 @@ from
 dbo.spot
 where genre = 'set()' --unknown genre in the dataset (mixed)
 
+
+
+
+--DELETE Statement
+delete from
+dbo.spot
+where 
+genre = 'set()' --deleting rows having genre as set()
+
+select distinct(genre)
+from dbo.spot
