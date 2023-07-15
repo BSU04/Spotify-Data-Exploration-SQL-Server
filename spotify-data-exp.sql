@@ -292,7 +292,7 @@ popularity > 70 and
 genre = 'pop'
 
 
---or operator
+--OR operator
 --return the artists from either 'rock' or 'pop'
 select distinct(artist), genre
 from dbo.spot
@@ -322,7 +322,20 @@ where
 not explicit == 0 
 
 
---top 10 artists with a popularity > 80
+--TOP 10 artists with a popularity > 80
 select top 10 artist, popularity
 from dbo.spot
 where popularity > 80
+
+
+
+--UPDATE
+update dbo.spot
+set artist = 'NSYNC'
+where
+artist = '*NSYNC'
+
+select * from 
+dbo.spot
+where
+artist = 'NSYNC'
