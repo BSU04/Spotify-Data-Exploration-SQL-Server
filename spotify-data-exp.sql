@@ -240,7 +240,7 @@ select distinct(genre)
 from dbo.spot
 
 
---like operator
+--LIKE Operator
 --select the artists with the name starting with 'm'
 select distinct(artist)
 from dbo.spot
