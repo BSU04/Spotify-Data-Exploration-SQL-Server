@@ -302,3 +302,21 @@ genre = 'rock'
 order by 
 genre asc
 
+
+--NOT Operator
+select artist, song, mode
+from dbo.spot
+where
+not mode = 0
+
+
+select song 
+from dbo.spot 
+where 
+not explicit = 1 
+
+
+select song
+from dbo.spot
+where 
+not explicit == 0 
